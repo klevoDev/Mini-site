@@ -1,0 +1,22 @@
+// * ===== fonts ===== * //
+@import "_fonts";
+
+// * ===== null ===== * //
+@import "_nullstyle";
+
+body {
+    font-family: "Gilroy", sans-serif;
+}
+
+// * ===== bem blocks ===== * //
+@import "_blocks";
+
+// * ===== header ===== * //
+
+// * ===== main ===== * //
+@import "_page";
+
+// * ===== all sections ===== * //
+
+// * ===== footer ===== * //
+@import "_footer";
