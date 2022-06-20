@@ -21,15 +21,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-._icon-bug:before {
+._icon-f:before {
   content: "\e900";
 }
-._icon-layers:before {
+
+._icon-g:before {
   content: "\e901";
 }
-// ._icon-cube:before {
-//   content: "\e902";
-// }
-._icon-cube::after {
+
+._icon-chat:before {
   content: "\e902";
+}
+
+._icon-in:before {
+  content: "\e903";
+}
+
+._icon-twit:before {
+  content: "\e904";
+}
+
+._icon-love:before {
+  content: "\e905";
+}
+
+._icon-user:before {
+  content: "\e906";
 }

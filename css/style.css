@@ -22,6 +22,57 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "iconfont";
+  src: url("./../fonts/iconfont.woff2") format("woff2"), url("./../fonts/iconfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]::before,
+[class*=" _icon-"]::before,
+[class^="_icon-"]::after,
+[class*=" _icon-"]::after {
+  font-family: "iconfont";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-f:before {
+  content: "\e900";
+}
+
+._icon-g:before {
+  content: "\e901";
+}
+
+._icon-chat:before {
+  content: "\e902";
+}
+
+._icon-in:before {
+  content: "\e903";
+}
+
+._icon-twit:before {
+  content: "\e904";
+}
+
+._icon-love:before {
+  content: "\e905";
+}
+
+._icon-user:before {
+  content: "\e906";
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -71,10 +122,203 @@ body {
   font-family: "Gilroy", sans-serif;
 }
 
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 160%;
+  color: #000;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #666666;
+}
+
+.list {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 230%;
+}
+
+.point {
+  padding-left: 15px;
+  position: relative;
+}
+
+.point::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #f25822;
+  border-radius: 50%;
+}
+
+.link {
+  color: #666;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.logo__span {
+  color: #f25822;
+}
+
+.page {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.footer {
+  padding: 100px 0 19px;
+  background-color: #f3f3f3;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -15px;
+  margin-bottom: 50px;
+}
+
+.footer__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  padding: 0 15px;
+}
+
+.footer__copy {
+  border-top: 1px solid #aaa;
+  padding-top: 19px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 230%;
+  text-align: center;
+  color: #888;
+}
+
+.grow__logo {
+  position: relative;
+  display: inline-block;
+  padding: 0 64px;
+  margin-bottom: 47px;
+}
+
+.grow__logo::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 43px;
+  height: 50px;
+  background: url("./../img/logo.png") 0 0/contain no-repeat;
+}
+
+.grow__text {
+  margin-bottom: 24px;
+}
+
+.grow__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grow__item {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: transparent;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.grow__item:hover {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f25822;
+}
+
+.grow__item:hover .grow__ref {
+  color: #fff;
+}
+
+.grow__ref {
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  color: #666;
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.company__subtitle {
+  margin-bottom: 34px;
+}
+
+.services__subtitle {
+  margin-bottom: 26px;
+}
+
+.contact__subtitle {
+  margin-bottom: 33px;
+}
+
+.contact__list {
+  width: 219px;
+}
+
+.contact__element {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #666;
+}
+
+.contact__span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #333;
+}
+
+.contact__link {
+  color: #666;
 }

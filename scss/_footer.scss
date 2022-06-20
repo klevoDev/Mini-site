@@ -1,0 +1,171 @@
+.footer {
+    padding: 100px 0 19px;
+    background-color: #f3f3f3;
+
+    &__row {
+        display: flex;
+        margin: 0 -15px;
+        margin-bottom: 50px;
+    }
+
+    &__column {
+        flex: 0 1 25%;
+        padding: 0 15px;
+
+        &_col-1 {
+        }
+
+        &_col-2 {
+        }
+
+        &_col-3 {
+        }
+
+        &_col-4 {
+        }
+    }
+
+    &__grow {
+    }
+
+    &__company {
+    }
+
+    &__services {
+    }
+
+    &__contact {
+    }
+
+    &__copy {
+        border-top: 1px solid #aaa;
+        padding-top: 19px;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 230%;
+        text-align: center;
+
+        color: #888;
+    }
+}
+
+.grow {
+    &__logo {
+        position: relative;
+        display: inline-block;
+        padding: 0 64px;
+        margin-bottom: 47px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -8px;
+            left: 0;
+
+            width: 43px;
+            height: 50px;
+            background: url("./../img/logo.png") 0 0 / contain no-repeat;
+        }
+    }
+
+    &__text {
+        margin-bottom: 24px;
+    }
+
+    &__socials {
+        display: flex;
+    }
+
+    &__item {
+        position: relative;
+
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: transparent;
+
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #f25822;
+
+            .grow__ref {
+                color: #fff;
+            }
+        }
+    }
+
+    &__ref {
+        position: absolute;
+        top: 7px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        color: #666;
+        font-size: 16px;
+
+        transition: all 0.3s ease 0s;
+    }
+}
+
+.company {
+    &__subtitle {
+        margin-bottom: 34px;
+    }
+
+    &__list {
+    }
+
+    &__point {
+    }
+
+    &__link {
+    }
+}
+
+.services {
+    &__subtitle {
+        margin-bottom: 26px;
+    }
+
+    &__list {
+    }
+
+    &__point {
+    }
+
+    &__link {
+    }
+}
+.contact {
+    &__subtitle {
+        margin-bottom: 33px;
+    }
+
+    &__list {
+        width: 219px;
+    }
+
+    &__element {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        color: #666;
+    }
+
+    &__span {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+
+        color: #333;
+    }
+
+    &__link {
+        color: #666;
+    }
+}

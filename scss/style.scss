@@ -1,11 +1,13 @@
 // * ===== fonts ===== * //
 @import "_fonts";
+@import "_iconfont";
 
 // * ===== null ===== * //
+@import "_variables";
 @import "_nullstyle";
 
 body {
-    font-family: "Gilroy", sans-serif;
+    font-family: $fontGilroy;
 }
 
 // * ===== bem blocks ===== * //
@@ -17,6 +19,6 @@ body {
 @import "_page";
 
 // * ===== all sections ===== * //
-
+@import "_news";
 // * ===== footer ===== * //
 @import "_footer";

@@ -1,3 +1,3 @@
-## name
+## Mini site
 
-description [here]().
+Practice [here](https://klevodev.github.io/Mini-site/).
