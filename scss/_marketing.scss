@@ -1,0 +1,48 @@
+.marketing {
+    &__row {
+        display: flex;
+        border: 1px solid #000;
+    }
+
+    &__body {
+        padding: 103px 80px 0 0;
+        flex: 1 1 auto;
+    }
+
+    &__heading {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 117%;
+
+        margin-bottom: 17px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+
+        color: #888888;
+
+        margin-bottom: 37px;
+    }
+
+    &__wrap-buttons {
+        display: flex;
+    }
+
+    &__wrap-link {
+    }
+
+    &__button {
+    }
+
+    &__video {
+    }
+
+    &__wrap-image {
+    }
+
+    &__image {
+    }
+}

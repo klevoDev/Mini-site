@@ -1,6 +1,10 @@
 .page {
     flex: 1 1 auto;
 
+    &__marketing {
+        padding: 40px 0 0;
+    }
+
     &__news {
         padding: 90px 0 142px 0;
     }

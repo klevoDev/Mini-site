@@ -1,0 +1,67 @@
+.header {
+    padding: 40px 0;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #000;
+    }
+
+    &__logo {
+        border: 1px solid #000;
+    }
+
+    &__nav {
+        border: 1px solid #000;
+    }
+}
+
+.logo {
+    &__span {
+    }
+}
+
+.nav {
+    &__list {
+        display: flex;
+
+        font-size: 14px;
+        line-height: 144%;
+    }
+
+    &__item {
+        margin-left: 35px;
+    }
+
+    &__ref {
+        color: #000;
+
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            color: #f25822;
+        }
+    }
+}
+
+.footer {
+    &__wrap-button {
+        width: 120px;
+        flex: 0 0 40px;
+
+        border: 1px solid #000;
+        margin: 0 auto;
+    }
+
+    &__link {
+        height: 100%;
+        width: 100%;
+
+        font-size: 12px;
+        line-height: 14px;
+        color: #ffffff;
+
+        background: #f25822;
+        border-radius: 30px;
+    }
+}

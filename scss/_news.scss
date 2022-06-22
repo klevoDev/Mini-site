@@ -23,12 +23,12 @@
     }
 
     &__wrap-image {
+        flex: 0 0 370px;
     }
 
     &__image {
-        width: 370px;
+        max-width: 100%;
         height: 100%;
-        object-fit: cover;
     }
 
     &__body {

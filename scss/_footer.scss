@@ -52,21 +52,6 @@
 
 .grow {
     &__logo {
-        position: relative;
-        display: inline-block;
-        padding: 0 64px;
-        margin-bottom: 47px;
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: -8px;
-            left: 0;
-
-            width: 43px;
-            height: 50px;
-            background: url("./../img/logo.png") 0 0 / contain no-repeat;
-        }
     }
 
     &__text {
@@ -85,12 +70,15 @@
         border-radius: 50%;
         background: transparent;
 
+        margin-left: 6px;
+        &:fisrt-child {
+            margin-left: 0;
+            margin-right: 7px;
+        }
+
         transition: all 0.3s ease 0s;
 
         &:hover {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
             background: #f25822;
 
             .grow__ref {
@@ -101,9 +89,9 @@
 
     &__ref {
         position: absolute;
-        top: 7px;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%, 0);
+        transform: translate(-50%, -50%);
 
         color: #666;
         font-size: 16px;
@@ -155,6 +143,12 @@
         font-size: 16px;
         line-height: 150%;
         color: #666;
+
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     &__span {
