@@ -4,15 +4,19 @@
     &__row {
         display: flex;
         justify-content: space-between;
-        border: 1px solid #000;
+        align-items: center;
     }
 
     &__logo {
-        border: 1px solid #000;
     }
 
     &__nav {
-        border: 1px solid #000;
+    }
+
+    &__wrap-button {
+    }
+
+    &__link {
     }
 }
 
@@ -31,6 +35,10 @@
 
     &__item {
         margin-left: 35px;
+
+        &:nth-child(1) {
+            margin-left: 240px;
+        }
     }
 
     &__ref {
@@ -41,27 +49,5 @@
         &:hover {
             color: #f25822;
         }
-    }
-}
-
-.footer {
-    &__wrap-button {
-        width: 120px;
-        flex: 0 0 40px;
-
-        border: 1px solid #000;
-        margin: 0 auto;
-    }
-
-    &__link {
-        height: 100%;
-        width: 100%;
-
-        font-size: 12px;
-        line-height: 14px;
-        color: #ffffff;
-
-        background: #f25822;
-        border-radius: 30px;
     }
 }
