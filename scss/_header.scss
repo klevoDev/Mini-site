@@ -16,7 +16,11 @@
     &__wrap-button {
     }
 
-    &__link {
+    &__button {
+        padding: 12px 27px 13px;
+
+        font-size: 12px;
+        line-height: 117%;
     }
 }
 
@@ -34,10 +38,47 @@
     }
 
     &__item {
-        margin-left: 35px;
-
-        &:nth-child(1) {
+        &_1 {
             margin-left: 240px;
+        }
+
+        &_2 {
+            margin-left: 35px;
+        }
+
+        &_3 {
+            margin-left: 35px;
+        }
+
+        &_4 {
+            margin-left: 35px;
+            padding-right: 11px;
+
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 7px;
+                right: 0;
+                width: 6px;
+                height: 6px;
+                border-right: 1px solid #000;
+                border-bottom: 1px solid #000;
+                transform: rotate(45deg);
+            }
+        }
+
+        &_5 {
+            margin-left: 24px;
+        }
+
+        &_6 {
+            margin-left: 35px;
+        }
+
+        &_7 {
+            margin-left: 35px;
         }
     }
 
