@@ -8,6 +8,7 @@
     }
 
     &__logo {
+        margin-right: 35px;
     }
 
     &__nav {
@@ -38,21 +39,11 @@
     }
 
     &__item {
-        &_1 {
-            margin-left: 240px;
-        }
+        margin-right: 35px;
 
-        &_2 {
-            margin-left: 35px;
-        }
-
-        &_3 {
-            margin-left: 35px;
-        }
-
-        &_4 {
-            margin-left: 35px;
+        &_droplist {
             padding-right: 11px;
+            margin-right: 24px;
 
             position: relative;
 
@@ -67,18 +58,6 @@
                 border-bottom: 1px solid #000;
                 transform: rotate(45deg);
             }
-        }
-
-        &_5 {
-            margin-left: 24px;
-        }
-
-        &_6 {
-            margin-left: 35px;
-        }
-
-        &_7 {
-            margin-left: 35px;
         }
     }
 

@@ -243,6 +243,10 @@ body {
           align-items: center;
 }
 
+.header__logo {
+  margin-right: 35px;
+}
+
 .header__button {
   padding: 12px 27px 13px;
   font-size: 12px;
@@ -257,25 +261,17 @@ body {
   line-height: 144%;
 }
 
-.nav__item_1 {
-  margin-left: 240px;
+.nav__item {
+  margin-right: 35px;
 }
 
-.nav__item_2 {
-  margin-left: 35px;
-}
-
-.nav__item_3 {
-  margin-left: 35px;
-}
-
-.nav__item_4 {
-  margin-left: 35px;
+.nav__item_droplist {
   padding-right: 11px;
+  margin-right: 24px;
   position: relative;
 }
 
-.nav__item_4:before {
+.nav__item_droplist:before {
   content: "";
   position: absolute;
   top: 7px;
@@ -286,18 +282,6 @@ body {
   border-bottom: 1px solid #000;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-}
-
-.nav__item_5 {
-  margin-left: 24px;
-}
-
-.nav__item_6 {
-  margin-left: 35px;
-}
-
-.nav__item_7 {
-  margin-left: 35px;
 }
 
 .nav__ref {
@@ -324,13 +308,18 @@ body {
   padding: 90px 0 142px 0;
 }
 
-.marketing {
-  padding: 103px 0;
+.marketing__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .marketing__body {
+  padding: 105px 0 100px 0;
   position: relative;
-  width: 543px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 522px;
+          flex: 0 0 522px;
 }
 
 .marketing__body::before {
@@ -344,16 +333,6 @@ body {
   border-radius: 13px;
   -webkit-transform: rotate(-30deg);
           transform: rotate(-30deg);
-}
-
-.marketing__body::after {
-  content: "";
-  position: absolute;
-  top: -103px;
-  right: -1027px;
-  width: 1027px;
-  height: 577px;
-  background: url("./..//img/test.png") 0 0/contain no-repeat;
 }
 
 .marketing__heading {
@@ -406,6 +385,16 @@ body {
   width: 30px;
   height: 30px;
   background: url("./../img/play.png") 0 0/contain no-repeat;
+}
+
+.marketing__wrap-image {
+  position: relative;
+}
+
+.marketing__image {
+  position: absolute;
+  top: 0px;
+  left: 0;
 }
 
 .news__subheading {

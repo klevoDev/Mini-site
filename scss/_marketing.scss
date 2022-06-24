@@ -1,9 +1,12 @@
 .marketing {
-    padding: 103px 0;
+    &__row {
+        display: flex;
+    }
 
     &__body {
+        padding: 105px 0 100px 0;
         position: relative;
-        width: 543px;
+        flex: 0 0 522px;
 
         &::before {
             content: "";
@@ -17,17 +20,6 @@
             background: rgba(242, 88, 34, 0.46);
             border-radius: 13px;
             transform: rotate(-30deg);
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            top: -103px;
-            right: -1027px;
-
-            width: 1027px;
-            height: 577px;
-            background: url("./..//img/test.png") 0 0 / contain no-repeat;
         }
     }
 
@@ -91,8 +83,12 @@
     }
 
     &__wrap-image {
+        position: relative;
     }
 
     &__image {
+        position: absolute;
+        top: 0px;
+        left: 0;
     }
 }
